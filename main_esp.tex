@@ -1,18 +1,18 @@
 \documentclass[11pt, a4paper]{article}
 
-\usepackage[T1]{fontenc}     % We are using pdfLaTeX,
-\usepackage[utf8]{inputenc}  % hence this preparation
-\usepackage[spanish]{babel} % CAMBIADO a spanish
+\usepackage[T1]{fontenc}     % We are using pdfLaTeX,
+\usepackage[utf8]{inputenc}  % hence this preparation
+\usepackage[british]{babel}
 \usepackage[left = 0mm, right = 0mm, top = 0mm, bottom = 0mm]{geometry}
 \usepackage[stretch = 25, shrink = 25, tracking=true, letterspace=30]{microtype}
-\usepackage{graphicx}        % To insert pictures
-\usepackage{xcolor}          % To add colour to the document
-\usepackage{marvosym}        % Provides icons for the contact details
+\usepackage{graphicx}        % To insert pictures
+\usepackage{xcolor}          % To add colour to the document
+\usepackage{marvosym}        % Provides icons for the contact details
 
-\usepackage{enumitem}        % To redefine spacing in lists
+\usepackage{enumitem}        % To redefine spacing in lists
 \setlist{parsep = 0pt, topsep = 0pt, partopsep = 1pt, itemsep = 1pt, leftmargin = 6mm}
 
-\usepackage{FiraSans}        % Change this to use any font, but keep it simple
+\usepackage{FiraSans}        % Change this to use any font, but keep it simple
 \renewcommand{\familydefault}{\sfdefault}
 
 \definecolor{cvblue}{HTML}{304263}
@@ -23,9 +23,9 @@
 \newcommand{\is}{\par\vskip.5ex plus .4ex} % Item spacing
 \newcommand{\smaller}[1]{{\small$\diamond$\ #1}}
 \newcommand{\headleft}[1]{\vspace*{3ex}\textsc{\textbf{#1}}\par%
-    \vspace*{-1.5ex}\hrulefill\par\vspace*{0.7ex}}
+    \vspace*{-1.5ex}\hrulefill\par\vspace*{0.7ex}}
 \newcommand{\headright}[1]{\vspace*{2.5ex}\textsc{\Large\color{cvblue}#1}\par%
-     \vspace*{-2ex}{\color{cvblue}\hrulefill}\par}
+     \vspace*{-2ex}{\color{cvblue}\hrulefill}\par}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage[colorlinks = true, urlcolor = white, linkcolor = white]{hyperref}
@@ -88,13 +88,6 @@ Whatsapp: 55 2491 9990
 \item Azure Blob Storage, Azure Functions
 \item AWS Lambda, AWS S3, AWS EC2, AWS Glue
 \item Terraform
-\end{itemize}
-
-\headleft{Intereses} % TRADUCIDO
-\begin{itemize}
-\item Arquitectura Cloud
-\item DataOps y CI/CD
-\item Modelado Data Vault 2.0
 \end{itemize}
 
 \end{minipage}%
