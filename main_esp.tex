@@ -1,0 +1,294 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[T1]{fontenc}     % Estamos usando pdfLaTeX,
+\usepackage[utf8]{inputenc}  % por lo tanto esta preparación
+\usepackage[spanish]{babel} % Cambiado a español
+\usepackage[left = 0mm, right = 0mm, top = 0mm, bottom = 0mm]{geometry}
+\usepackage[stretch = 25, shrink = 25, tracking=true, letterspace=30]{microtype}
+\usepackage{graphicx}        % Para insertar imágenes
+\usepackage{xcolor}          % Para añadir color al documento
+\usepackage{marvosym}        % Provee íconos para los detalles de contacto
+
+\usepackage{enumitem}        % Para redefinir el espaciado en las listas
+\setlist{parsep = 0pt, topsep = 0pt, partopsep = 1pt, itemsep = 1pt, leftmargin = 6mm}
+
+\usepackage{FiraSans}        % Cambia esto para usar cualquier fuente, pero mantenlo simple
+\renewcommand{\familydefault}{\sfdefault}
+
+\definecolor{cvblue}{HTML}{304263}
+
+%%%%%%% DEFINICIONES DE COMANDOS DE USUARIO %%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Estos son los verdaderos caballos de batalla de esta plantilla
+\newcommand{\dates}[1]{\hfill\mbox{\textbf{#1}}} % Texto en negrita que no se divide en líneas
+\newcommand{\is}{\par\vskip.5ex plus .4ex} % Espaciado de ítem
+\newcommand{\smaller}[1]{{\small$\diamond$\ #1}}
+\newcommand{\headleft}[1]{\vspace*{3ex}\textsc{\textbf{#1}}\par%
+    \vspace*{-1.5ex}\hrulefill\par\vspace*{0.7ex}}
+\newcommand{\headright}[1]{\vspace*{2.5ex}\textsc{\Large\color{cvblue}#1}\par%
+     \vspace*{-2ex}{\color{cvblue}\hrulefill}\par}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[colorlinks = true, urlcolor = white, linkcolor = white]{hyperref}
+
+\begin{document}
+
+% Definiciones de estilo -- eliminando el espacio innecesario y añadiendo los saltos explícitamente
+\setlength{\topskip}{0pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\fboxsep}{0pt}
+\pagestyle{empty}
+\raggedbottom
+
+\begin{minipage}[t]{0.33\textwidth} %% Columna izquierda -- definición exterior
+%  Columna izquierda -- rectángulo oscuro superior
+\colorbox{cvblue}{\begin{minipage}[t][5mm][t]{\textwidth}\null\hfill\null\end{minipage}}
+
+\vspace{-.2ex} % Elimina el pequeño hueco
+\colorbox{cvblue!90}{\color{white}  %% CAJA IZQUIERDA
+\kern0.09\textwidth\relax% Margen izquierdo proporcionado explícitamente
+\begin{minipage}[t][293mm][t]{0.82\textwidth}
+\raggedright
+\vspace*{2.5ex}
+
+\Large \textbf{Osvaldo Estrada} \normalsize
+
+% Centrado sin espaciado vertical extra
+\null\hfill\includegraphics[width=0.65\textwidth]{osvaldo.jpg}\hfill\null
+
+\vspace*{0.5ex} % Espacio extra después de la imagen
+
+\headleft{Resumen del Perfil} % Título traducido
+Un profundo amor por el aprendizaje, soy
+proactivo y organizado, buscando
+consistentemente nuevas oportunidades para crecer.
+Orientado a resultados, abordo las tareas
+con determinación y me esfuerzo por
+la excelencia. La comunicación efectiva
+es una fortaleza, lo que me permite compartir
+ideas claramente y colaborar.
+
+
+\headleft{Información Personal} % Título traducido
+Ubicación: \textbf{México, CDMX} \\[0.5ex] % Traducido
+Nacimiento: \textbf{20 de Octubre, 2000} \\[0.5ex] % Traducido
+Idiomas: \textbf{Español(Nativo)}, \textbf{Inglés(B2 Intermedio/Intermedio-Alto)} \\[0.5ex] % Traducido
+Linkedin: \href{https://www.linkedin.com/in/osvaldo-israel-estrada-sosa-19529919a/}{Click me} \\[0.5ex]
+Whatsapp: 55 2491 9990
+
+\headleft{Habilidades} % Título traducido
+\begin{itemize}
+\item Python, Numpy, Scikit-learn
+\item Pyspark, DBT, Azure Databricks
+\item Modelado Dimensional, Modelado ER
+\item SQLServer, Postgres
+\item Flask
+\item Git, Github, Bitbucket
+\item Linux/UNIX, CLI, Docker
+\item Azure Blob Storage, Azure Functions
+\item AWS Lambda, AWS S3, AWS EC2, AWS Glue
+\item Terraform
+\end{itemize}
+
+\headleft{Intereses} % Título traducido
+\begin{itemize}
+\item Arquitectura Cloud
+\item DataOps y CI/CD
+\item Modelado Data Vault 2.0
+\end{itemize}
+
+\end{minipage}%
+\kern0.09\textwidth\relax%%Margen derecho proporcionado explícitamente para estirar la caja de color
+}
+\end{minipage}% Columna derecha
+\hskip2.5em% Margen izquierdo para el área blanca
+\begin{minipage}[t]{0.56\textwidth}
+\setlength{\parskip}{0.8ex}% Añade espacios entre párrafos; usa \\ para añadir nuevas líneas sin este espacio. Reduce esta cantidad para encajar más datos verticalmente
+
+\vspace{2ex}
+
+\headright{Experiencia} % Título traducido
+
+\textsc{Ingeniero de Datos}\\ % Título traducido
+\textit{en Exploration \& Discovery Technologies}\\ % 'at' traducido a 'en'
+\dates{Noviembre 2023 - }\\ % Mes traducido
+Ingeniero de Datos con trayectoria comprobada en la optimización de pipelines de datos y la mejora de la eficiencia operativa para un sistema de seguimiento de flotas. Experimentado en el aprovechamiento de tecnologías como Python, SQL, Docker, DBT, Databricks y PySpark. Competente en modelado de datos, procesos ETL y prácticas CI/CD, desde el desarrollo hasta la implementación, utilizando tecnologías cloud como Azure Blob Storage, Azure Functions, AWS Lambda, AWS S3, AWS EC2, AWS Glue. % Texto traducido
+
+\vspace{0.2cm}
+\textsc{Científico de Datos}\\ % Título traducido
+\textit{en Insaite}\\ % 'at' traducido a 'en'
+\dates{Julio 2022 - Febrero 2023}\\ % Meses traducidos
+He trabajado en pipelines de datos completos para predicción de abandono (churn), informes médicos, clasificación de texto y paneles de control (dashboards) para la toma de decisiones.
+Involucrado en la ingesta de datos, pasando por el análisis exploratorio de datos, utilizando manipulaciones avanzadas de ingeniería de datos, almacenamiento en almacenes de datos (warehouses) y bases de datos relacionales, implementando finalmente KPIs útiles y modelos de aprendizaje automático/aprendizaje profundo (machine learning/deep learning). % Texto traducido
+
+\vspace{0.2cm}
+\textsc{Ingeniero de Datos}\\ % Título traducido
+\textit{en Instituto de Investigaciones en Matemáticas Aplicadas y Sistemas}\\ % 'at' traducido a 'en'
+\dates{Enero 2021 - Diciembre 2021}\\ % Meses traducidos
+Diseño e implementación del pipeline completo para extraer, limpiar y analizar videos de Tiktok, con la ayuda de técnicas de web scraping. Gestión, administración de sistemas linux y SGBDR (RDBMS), poblándolos con reconocimiento de objetos a partir de una red neuronal convolucional sobre GPUs y finalmente predecir escenas de riesgo de COVID-19 según la OMS con el objetivo de disminuir la infección. % Texto traducido
+
+\headright{Educación} % Título traducido
+
+\smaller{Licenciatura en Matemáticas Aplicadas y Ciencias de la Computación}\\ % Título traducido
+\smaller{Universidad Nacional Autónoma de México}. \dates{2019-2022}
+
+\headright{Certificaciones} % Título traducido
+
+\smaller{AWS Certified Cloud Practitioner} % Dejo los nombres de las certificaciones en inglés
+\is
+\smaller{Databricks Certified Associate Developer for Apache Spark 3.0}
+\is
+\smaller{Databricks Certified Data Engineer Associate}
+\is
+\smaller{Scrum Master Certified}
+
+\end{minipage}
+
+\end{document}\documentclass[11pt, a4paper]{article}
+
+\usepackage[T1]{fontenc}     % Estamos usando pdfLaTeX,
+\usepackage[utf8]{inputenc}  % por lo tanto esta preparación
+\usepackage[spanish]{babel} % Cambiado a español
+\usepackage[left = 0mm, right = 0mm, top = 0mm, bottom = 0mm]{geometry}
+\usepackage[stretch = 25, shrink = 25, tracking=true, letterspace=30]{microtype}
+\usepackage{graphicx}        % Para insertar imágenes
+\usepackage{xcolor}          % Para añadir color al documento
+\usepackage{marvosym}        % Provee íconos para los detalles de contacto
+
+\usepackage{enumitem}        % Para redefinir el espaciado en las listas
+\setlist{parsep = 0pt, topsep = 0pt, partopsep = 1pt, itemsep = 1pt, leftmargin = 6mm}
+
+\usepackage{FiraSans}        % Cambia esto para usar cualquier fuente, pero mantenlo simple
+\renewcommand{\familydefault}{\sfdefault}
+
+\definecolor{cvblue}{HTML}{304263}
+
+%%%%%%% DEFINICIONES DE COMANDOS DE USUARIO %%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Estos son los verdaderos caballos de batalla de esta plantilla
+\newcommand{\dates}[1]{\hfill\mbox{\textbf{#1}}} % Texto en negrita que no se divide en líneas
+\newcommand{\is}{\par\vskip.5ex plus .4ex} % Espaciado de ítem
+\newcommand{\smaller}[1]{{\small$\diamond$\ #1}}
+\newcommand{\headleft}[1]{\vspace*{3ex}\textsc{\textbf{#1}}\par%
+    \vspace*{-1.5ex}\hrulefill\par\vspace*{0.7ex}}
+\newcommand{\headright}[1]{\vspace*{2.5ex}\textsc{\Large\color{cvblue}#1}\par%
+     \vspace*{-2ex}{\color{cvblue}\hrulefill}\par}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[colorlinks = true, urlcolor = white, linkcolor = white]{hyperref}
+
+\begin{document}
+
+% Definiciones de estilo -- eliminando el espacio innecesario y añadiendo los saltos explícitamente
+\setlength{\topskip}{0pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\fboxsep}{0pt}
+\pagestyle{empty}
+\raggedbottom
+
+\begin{minipage}[t]{0.33\textwidth} %% Columna izquierda -- definición exterior
+%  Columna izquierda -- rectángulo oscuro superior
+\colorbox{cvblue}{\begin{minipage}[t][5mm][t]{\textwidth}\null\hfill\null\end{minipage}}
+
+\vspace{-.2ex} % Elimina el pequeño hueco
+\colorbox{cvblue!90}{\color{white}  %% CAJA IZQUIERDA
+\kern0.09\textwidth\relax% Margen izquierdo proporcionado explícitamente
+\begin{minipage}[t][293mm][t]{0.82\textwidth}
+\raggedright
+\vspace*{2.5ex}
+
+\Large \textbf{Osvaldo Estrada} \normalsize
+
+% Centrado sin espaciado vertical extra
+\null\hfill\includegraphics[width=0.65\textwidth]{osvaldo.jpg}\hfill\null
+
+\vspace*{0.5ex} % Espacio extra después de la imagen
+
+\headleft{Resumen del Perfil} % Título traducido
+Un profundo amor por el aprendizaje, soy
+proactivo y organizado, buscando
+consistentemente nuevas oportunidades para crecer.
+Orientado a resultados, abordo las tareas
+con determinación y me esfuerzo por
+la excelencia. La comunicación efectiva
+es una fortaleza, lo que me permite compartir
+ideas claramente y colaborar.
+
+
+\headleft{Información Personal} % Título traducido
+Ubicación: \textbf{México, CDMX} \\[0.5ex] % Traducido
+Nacimiento: \textbf{20 de Octubre, 2000} \\[0.5ex] % Traducido
+Idiomas: \textbf{Español(Nativo)}, \textbf{Inglés(B2 Intermedio/Intermedio-Alto)} \\[0.5ex] % Traducido
+Linkedin: \href{https://www.linkedin.com/in/osvaldo-israel-estrada-sosa-19529919a/}{Click me} \\[0.5ex]
+Whatsapp: 55 2491 9990
+
+\headleft{Habilidades} % Título traducido
+\begin{itemize}
+\item Python, Numpy, Scikit-learn
+\item Pyspark, DBT, Azure Databricks
+\item Modelado Dimensional, Modelado ER
+\item SQLServer, Postgres
+\item Flask
+\item Git, Github, Bitbucket
+\item Linux/UNIX, CLI, Docker
+\item Azure Blob Storage, Azure Functions
+\item AWS Lambda, AWS S3, AWS EC2, AWS Glue
+\item Terraform
+\end{itemize}
+
+\headleft{Intereses} % Título traducido
+\begin{itemize}
+\item Arquitectura Cloud
+\item DataOps y CI/CD
+\item Modelado Data Vault 2.0
+\end{itemize}
+
+\end{minipage}%
+\kern0.09\textwidth\relax%%Margen derecho proporcionado explícitamente para estirar la caja de color
+}
+\end{minipage}% Columna derecha
+\hskip2.5em% Margen izquierdo para el área blanca
+\begin{minipage}[t]{0.56\textwidth}
+\setlength{\parskip}{0.8ex}% Añade espacios entre párrafos; usa \\ para añadir nuevas líneas sin este espacio. Reduce esta cantidad para encajar más datos verticalmente
+
+\vspace{2ex}
+
+\headright{Experiencia} % Título traducido
+
+\textsc{Ingeniero de Datos}\\ % Título traducido
+\textit{en Exploration \& Discovery Technologies}\\ % 'at' traducido a 'en'
+\dates{Noviembre 2023 - }\\ % Mes traducido
+Ingeniero de Datos con trayectoria comprobada en la optimización de pipelines de datos y la mejora de la eficiencia operativa para un sistema de seguimiento de flotas. Experimentado en el aprovechamiento de tecnologías como Python, SQL, Docker, DBT, Databricks y PySpark. Competente en modelado de datos, procesos ETL y prácticas CI/CD, desde el desarrollo hasta la implementación, utilizando tecnologías cloud como Azure Blob Storage, Azure Functions, AWS Lambda, AWS S3, AWS EC2, AWS Glue. % Texto traducido
+
+\vspace{0.2cm}
+\textsc{Científico de Datos}\\ % Título traducido
+\textit{en Insaite}\\ % 'at' traducido a 'en'
+\dates{Julio 2022 - Febrero 2023}\\ % Meses traducidos
+He trabajado en pipelines de datos completos para predicción de abandono (churn), informes médicos, clasificación de texto y paneles de control (dashboards) para la toma de decisiones.
+Involucrado en la ingesta de datos, pasando por el análisis exploratorio de datos, utilizando manipulaciones avanzadas de ingeniería de datos, almacenamiento en almacenes de datos (warehouses) y bases de datos relacionales, implementando finalmente KPIs útiles y modelos de aprendizaje automático/aprendizaje profundo (machine learning/deep learning). % Texto traducido
+
+\vspace{0.2cm}
+\textsc{Ingeniero de Datos}\\ % Título traducido
+\textit{en Instituto de Investigaciones en Matemáticas Aplicadas y Sistemas}\\ % 'at' traducido a 'en'
+\dates{Enero 2021 - Diciembre 2021}\\ % Meses traducidos
+Diseño e implementación del pipeline completo para extraer, limpiar y analizar videos de Tiktok, con la ayuda de técnicas de web scraping. Gestión, administración de sistemas linux y SGBDR (RDBMS), poblándolos con reconocimiento de objetos a partir de una red neuronal convolucional sobre GPUs y finalmente predecir escenas de riesgo de COVID-19 según la OMS con el objetivo de disminuir la infección. % Texto traducido
+
+\headright{Educación} % Título traducido
+
+\smaller{Licenciatura en Matemáticas Aplicadas y Ciencias de la Computación}\\ % Título traducido
+\smaller{Universidad Nacional Autónoma de México}. \dates{2019-2022}
+
+\headright{Certificaciones} % Título traducido
+
+\smaller{AWS Certified Cloud Practitioner} % Dejo los nombres de las certificaciones en inglés
+\is
+\smaller{Databricks Certified Associate Developer for Apache Spark 3.0}
+\is
+\smaller{Databricks Certified Data Engineer Associate}
+\is
+\smaller{Scrum Master Certified}
+
+\end{minipage}
+
+\end{document}
+
