@@ -1,18 +1,18 @@
 \documentclass[11pt, a4paper]{article}
 
-\usepackage[T1]{fontenc}     % We are using pdfLaTeX,
-\usepackage[utf8]{inputenc}  % hence this preparation
-\usepackage[british]{babel}
+\usepackage[T1]{fontenc}     % We are using pdfLaTeX,
+\usepackage[utf8]{inputenc}  % hence this preparation
+\usepackage[spanish]{babel} % CAMBIADO a spanish
 \usepackage[left = 0mm, right = 0mm, top = 0mm, bottom = 0mm]{geometry}
 \usepackage[stretch = 25, shrink = 25, tracking=true, letterspace=30]{microtype}
-\usepackage{graphicx}        % To insert pictures
-\usepackage{xcolor}          % To add colour to the document
-\usepackage{marvosym}        % Provides icons for the contact details
+\usepackage{graphicx}        % To insert pictures
+\usepackage{xcolor}          % To add colour to the document
+\usepackage{marvosym}        % Provides icons for the contact details
 
-\usepackage{enumitem}        % To redefine spacing in lists
+\usepackage{enumitem}        % To redefine spacing in lists
 \setlist{parsep = 0pt, topsep = 0pt, partopsep = 1pt, itemsep = 1pt, leftmargin = 6mm}
 
-\usepackage{FiraSans}        % Change this to use any font, but keep it simple
+\usepackage{FiraSans}        % Change this to use any font, but keep it simple
 \renewcommand{\familydefault}{\sfdefault}
 
 \definecolor{cvblue}{HTML}{304263}
@@ -23,9 +23,9 @@
 \newcommand{\is}{\par\vskip.5ex plus .4ex} % Item spacing
 \newcommand{\smaller}[1]{{\small$\diamond$\ #1}}
 \newcommand{\headleft}[1]{\vspace*{3ex}\textsc{\textbf{#1}}\par%
-    \vspace*{-1.5ex}\hrulefill\par\vspace*{0.7ex}}
+    \vspace*{-1.5ex}\hrulefill\par\vspace*{0.7ex}}
 \newcommand{\headright}[1]{\vspace*{2.5ex}\textsc{\Large\color{cvblue}#1}\par%
-     \vspace*{-2ex}{\color{cvblue}\hrulefill}\par}
+     \vspace*{-2ex}{\color{cvblue}\hrulefill}\par}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage[colorlinks = true, urlcolor = white, linkcolor = white]{hyperref}
@@ -41,11 +41,11 @@
 \raggedbottom
 
 \begin{minipage}[t]{0.33\textwidth} %% Left column -- outer definition
-%  Left column -- top dark rectangle
+%  Left column -- top dark rectangle
 \colorbox{cvblue}{\begin{minipage}[t][5mm][t]{\textwidth}\null\hfill\null\end{minipage}}
 
 \vspace{-.2ex} % Eliminates the small gap
-\colorbox{cvblue!90}{\color{white}  %% LEFT BOX
+\colorbox{cvblue!90}{\color{white}  %% LEFT BOX
 \kern0.09\textwidth\relax% Left margin provided explicitly
 \begin{minipage}[t][293mm][t]{0.82\textwidth}
 \raggedright
@@ -58,29 +58,29 @@
 
 \vspace*{0.5ex} % Extra space after the picture
 
-\headleft{Profile Summary}
-A deep love for learning, I am
-proactive and organized, consistently
-seeking new opportunities to grow.
-Result oriented, approaching tasks
-with determination and striving for
-excellence. Effective communication
-is a strength, allowing me to share
-ideas clearly and collaborate.
+\headleft{Resumen del Perfil} % TRADUCIDO
+Un profundo amor por el aprendizaje, soy
+proactivo y organizado, buscando
+consistentemente nuevas oportunidades para crecer.
+Orientado a resultados, abordando las tareas
+con determinación y esforzándome por
+la excelencia. La comunicación efectiva
+es una fortaleza, permitiéndome compartir
+ideas claramente y colaborar.
 
 
-\headleft{Personal information}
-Location: \textbf{Mexico, CDMX} \\[0.5ex]
-Birth: \textbf{October 20, 2000} \\[0.5ex]
-Languages: \textbf{Spanish(Native)}, \textbf{English(B2 Intermediate/Upper-Intermediate)} \\[0.5ex]
-Linkedin: \href{https://www.linkedin.com/in/osvaldo-israel-estrada-sosa-19529919a/}{Click me} \\[0.5ex]
+\headleft{Información Personal} % TRADUCIDO
+Ubicación: \textbf{México, CDMX} \\[0.5ex] % TRADUCIDO
+Nacimiento: \textbf{20 de octubre de 2000} \\[0.5ex] % TRADUCIDO
+Idiomas: \textbf{Español (Nativo)}, \textbf{Inglés (B2 Intermedio/Intermedio-Alto)} \\[0.5ex] % TRADUCIDO
+Linkedin: \href{https://www.linkedin.com/in/osvaldo-israel-estrada-sosa-19529919a/}{Haz clic aquí} \\[0.5ex] % TRADUCIDO
 Whatsapp: 55 2491 9990
 
-\headleft{Skills}
+\headleft{Habilidades} % TRADUCIDO
 \begin{itemize}
 \item Python, Numpy, Scikit-learn
 \item Pyspark, DBT, Azure Databricks
-\item Dimensional Modelling, ER Modelling
+\item Modelado Dimensional, Modelado ER
 \item SQLServer, Postgres
 \item Flask
 \item Git, Github, Bitbucket
@@ -90,11 +90,11 @@ Whatsapp: 55 2491 9990
 \item Terraform
 \end{itemize}
 
-\headleft{Interests}
+\headleft{Intereses} % TRADUCIDO
 \begin{itemize}
-\item Cloud Architecture
-\item DataOps and CI/CD
-\item Data Vault 2.0 Modelling
+\item Arquitectura Cloud
+\item DataOps y CI/CD
+\item Modelado Data Vault 2.0
 \end{itemize}
 
 \end{minipage}%
@@ -107,41 +107,42 @@ Whatsapp: 55 2491 9990
 
 \vspace{2ex}
 
-\headright{Experience}
+\headright{Experiencia} % TRADUCIDO
 
-\textsc{Data Engineer}\\
-\textit{at Exploration \& Discovery Technologies}\\
-\dates{November 2023 - }\\
-Data Engineer with a proven track record in optimizing data pipelines and improving operational efficiency for fleet tracking system. Experienced in leveraging technologies such as Python, SQL, Docker, DBT, Databricks, and PySpark. Skilled in data modeling, ETL processes, and CI/CD practices, from development to deployment using cloud technologies such as Azure Blob Storage, Azure Functions, AWS Lambda, AWS S3, AWS EC2, AWS Glue.
-
-\vspace{0.2cm}
-\textsc{Data Scientist}\\
-\textit{at Insaite}\\
-\dates{July 2022 - February 2023}\\
-I have worked on entire data pipelines for churn prediction, medical reports, text classification and decision making dashboards.
-Involve in data ingestion, passing through exploratory data analysis, using advanced data engineer manipulations, storing on warehouses and relational databases, finally implementing useful KPIs and machine learning/deep learning models.
+\textsc{Ingeniero de Datos}\\ % TRADUCIDO
+\textit{en Exploration \& Discovery Technologies}\\ % TRADUCIDO
+\dates{Noviembre 2023 - }\\ % TRADUCIDO
+Ingeniero de Datos con un historial comprobado en la optimización de pipelines de datos y la mejora de la eficiencia operativa para un sistema de rastreo de flotas. Con experiencia en el aprovechamiento de tecnologías como Python, SQL, Docker, DBT, Databricks y PySpark. Competente en modelado de datos, procesos ETL y prácticas CI/CD, desde el desarrollo hasta la implementación utilizando tecnologías cloud como Azure Blob Storage, Azure Functions, AWS Lambda, AWS S3, AWS EC2, AWS Glue. % TRADUCIDO
 
 \vspace{0.2cm}
-\textsc{Data Engineer}\\
-\textit{at Instituto de Investigaciones en Matemáticas Aplicadas y Sistemas}\\
-\dates{January 2021 - December 2021}\\
-Design and implementation of the entire pipeline to extract, clean and analyze Tiktok videos, with help of web scraping techniques. Management, adminstration of linux systems and RDBMS, populate them with object recognition from a convolutional neural network on top of GPUs and finally predict COVID-19 risky scenes according to OMS aimed to diminish infection.
+\textsc{Científico de Datos}\\ % TRADUCIDO
+\textit{en Insaite}\\
+\dates{Julio 2022 - Febrero 2023}\\
+He trabajado en pipelines de datos completos para predicción de abandono (churn), reportes médicos, clasificación de texto y paneles de control para la toma de decisiones.
+Involucrado en la ingesta de datos, pasando por el análisis exploratorio de datos, utilizando manipulaciones avanzadas de ingeniería de datos, almacenamiento en almacenes de datos y bases de datos relacionales, finalmente implementando KPIs útiles y modelos de machine learning/deep learning. % TRADUCIDO
 
-\headright{Education}
+\vspace{0.2cm}
+\textsc{Ingeniero de Datos}\\ % TRADUCIDO
+\textit{en Instituto de Investigaciones en Matemáticas Aplicadas y Sistemas}\\ % TRADUCIDO
+\dates{Enero 2021 - Diciembre 2021}\\ % TRADUCIDO
+Diseño e implementación del pipeline completo para extraer, limpiar y analizar videos de Tiktok, con ayuda de técnicas de web scraping. Gestión, administración de sistemas linux y SGBDR, poblarlos con reconocimiento de objetos a partir de una red neuronal convolucional sobre GPUs y finalmente predecir escenas de riesgo de COVID-19 según la OMS con el objetivo de disminuir la infección. % TRADUCIDO
 
-\smaller{B.S.E Applied mathematics and computer science}\\
+\headright{Educación} % TRADUCIDO
+
+\smaller{Licenciatura en Ingeniería en Matemáticas Aplicadas y Computación}\\ % TRADUCIDO
 \smaller{Universidad Nacional Autónoma de México}. \dates{2019-2022}
 
-\headright{Certifications}
+\headright{Certificaciones} % TRADUCIDO
 
-\smaller{AWS Certified Cloud Practitioner}
+\smaller{AWS Cloud Practitioner Certificado} % TRADUCIDO
 \is
-\smaller{Databricks Certified Associate Developer for Apache Spark 3.0}
+\smaller{Databricks Certified Associate Developer para Apache Spark 3.0} % TRADUCIDO
 \is
-\smaller{Databricks Certified Data Engineer Associate}
+\smaller{Databricks Certified Data Engineer Associate} % TRADUCIDO
 \is
-\smaller{Scrum Master Certified}
+\smaller{Scrum Master Certificado} % TRADUCIDO
 
 \end{minipage}
 
 \end{document}
+
